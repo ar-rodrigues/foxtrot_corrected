@@ -1,0 +1,20 @@
+export default [
+ {
+  id: 1,
+  name: 'Bertie Yates',
+  birth: '24-09-1993',
+  profession: 'Developer',
+  phone: '(51) 998346496',
+  goal: 'Pain on the back',
+  qp: '',
+  hda: '',
+  hs: '',
+  psychology: '',
+  medication: '',
+  pain: '',
+  palpation: '',
+  tests: '',
+  symptoms: '',
+  date: '24-01-2020',
+ },
+];
