@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import formDefault from './formDefault';
 
 
@@ -8,15 +7,13 @@ function Add({ person, handleChange, handleSubmit }) {
  const fields = Object.keys(formDefault);
 
  return (
-  <section>
-   <div className="form">
-    <div class='title'></div>
+  <article className='form-section form-small'>
     <form className="form" onSubmit={(e) => handleSubmit(e)}>
      {
       fields.map((item, index) => {
 
        return item !== 'id' && (
-        <div key={index}>
+        <div key={index} className='form-control'>
          <label htmlFor={item}>{item}</label>
          <input
           type={item === 'birth' || item === 'date' ? 'date' : 'text'}
@@ -25,18 +22,19 @@ function Add({ person, handleChange, handleSubmit }) {
           value={person[item]}
           onChange={(e) => handleChange(e)}
           placeholder={`enter ${item}`}
+          className='form-input'
          />
         </div>
        );
       })
      }
 
-     <Button variant='primary' type="submit" onSubmit={(e) => handleSubmit(e)}>
+     <button className='submit-btn' type="submit" onSubmit={(e) => handleSubmit(e)}>
       Submit
-  </Button>
+  </button>
     </form >
-   </div>
-  </section>
+
+  </article>
  );
 }
 
