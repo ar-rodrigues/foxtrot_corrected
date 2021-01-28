@@ -16,7 +16,8 @@ function App() {
   const [person, setPerson] = useState({ ...formDefault });
   const [editID, setEditID] = useState(null);
   const [isEditting, setIsEditting] = useState(false);
-  const [showAdd, setShowAdd] = useState(true);
+  const [showAdd, setShowAdd] = useState(false);
+  const [showClient, setShowClient] = useState(false);
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -87,6 +88,8 @@ function App() {
             people={people}
             removePerson={removePerson}
             editPerson={editPerson}
+            showClient={showClient}
+            setShowClient={setShowClient}
           />
         </section>
       </div>

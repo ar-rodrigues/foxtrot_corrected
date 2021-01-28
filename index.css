@@ -261,11 +261,15 @@ main {
 /* list */
 .list-container {
   margin-top: 2rem;
+  display: grid;
+  place-items: justify-content;
+
 }
 
 .list-person {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 0.5rem;
   transition: var(--transition);
   padding: 0.25rem 1rem;
@@ -280,13 +284,14 @@ main {
   color: var(--clr-grey-5);
 }
 .title {
-  margin-bottom: 0;
+  margin-bottom: auto;
   color: var(--clr-grey-1);
   letter-spacing: 2px;
   transition: var(--transition);
 }
 .edit-btn,
-.delete-btn {
+.delete-btn,
+.show-client-btn {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -305,4 +310,16 @@ main {
 }
 .delete-btn:hover {
   color: var(--clr-red-dark);
+}
+
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.client h5,
+p {
+  flex: 1 1 200px; /*  Stretching: */
+  flex: 0 1 200px; /*  No stretching: */
+  margin: 5px;
 }
