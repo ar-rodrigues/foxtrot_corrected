@@ -1,9 +1,9 @@
 import React from 'react';
-import formDefault from './formDefault';
+//import formDefault from './formDefault';
 
 
 function Client({people}) {
-  const fields = Object.keys(formDefault);
+  //const fields = Object.keys(formDefault);
   
   return (
     <>

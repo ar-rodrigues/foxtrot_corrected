@@ -2,7 +2,6 @@ import React from "react";
 import { BiTrash } from "react-icons/bi";
 import { FaEdit } from "react-icons/fa";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
-import Client from './Client';
 
 const List = ({ people, removePerson, editPerson, showClient, setShowClient }) => {
   return (
