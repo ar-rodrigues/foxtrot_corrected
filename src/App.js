@@ -60,13 +60,12 @@ function App() {
   return (
     <main>
       <div className="container">
+      <div className='title'>
+        <h3>Foxtrot Project 
+        <span> <FaEdit /></span>
+        </h3>
+      </div>
         <section className="add-section">
-          <h3>
-            Foxtrot Project{" "}
-            <span>
-              <FaEdit />
-            </span>
-          </h3>
 
           <header>
             <h4>Adicionar Novo</h4>
